@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Advanced Calculator</title>
+    <title>Gagalin Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gagalin&display=swap">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Gagalin', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -80,7 +81,7 @@
 <body>
 
     <div id="calculator">
-        <div id="calculator-name">GitHub Calculator</div>
+        <div id="calculator-name">Gagalin Calculator</div>
         <input type="text" id="display" disabled>
         <grid-container>
             <button onclick="clearDisplay()">C</button>
@@ -107,6 +108,12 @@
             <button onclick="appendToDisplay('//')">÷</button>
             <button onclick="convertCurrency()">$</button>
             <button onclick="convertUnit()">→</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="appendToDisplay('[')">[</button>
+            <button onclick="appendToDisplay(']')">]</button>
+            <button onclick="appendToDisplay('{')">{</button>
+            <button onclick="appendToDisplay('}')">}</button>
         </grid-container>
         <div id="history"></div>
     </div>
