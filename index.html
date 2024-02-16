@@ -106,8 +106,6 @@
             <button onclick="appendToDisplay('sin(')">sin</button>
             <button onclick="appendToDisplay('cos(')">cos</button>
             <button onclick="appendToDisplay('//')">÷</button>
-            <button onclick="convertCurrency()">$</button>
-            <button onclick="convertUnit()">→</button>
             <button onclick="appendToDisplay('(')">(</button>
             <button onclick="appendToDisplay(')')">)</button>
             <button onclick="appendToDisplay('[')">[</button>
@@ -150,26 +148,6 @@
 
             } catch (error) {
                 document.getElementById('display').value = 'Error';
-            }
-        }
-
-        function convertCurrency() {
-            let amount = parseFloat(prompt("Enter amount in USD:"));
-            if (!isNaN(amount)) {
-                let convertedAmount = amount * 0.85; // Assuming a fixed conversion rate for demonstration
-                document.getElementById('display').value = convertedAmount;
-            } else {
-                alert("Invalid input. Please enter a valid number.");
-            }
-        }
-
-        function convertUnit() {
-            let value = parseFloat(prompt("Enter value to convert:"));
-            if (!isNaN(value)) {
-                let convertedValue = value * 2.54; // Assuming a fixed conversion factor for demonstration (cm to inches)
-                document.getElementById('display').value = convertedValue;
-            } else {
-                alert("Invalid input. Please enter a valid number.");
             }
         }
     </script>
